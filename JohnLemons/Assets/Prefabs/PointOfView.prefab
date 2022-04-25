@@ -58,5 +58,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 084eef4cf8dd27e90b36824be3ecfcc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  script: {fileID: 5297321323498978387, guid: 563d5d9aaed5e125e8458ed74fe4c9d3, type: 3}
+  player: {fileID: 8411430742036781226}
   gameEnding: {fileID: 0}
