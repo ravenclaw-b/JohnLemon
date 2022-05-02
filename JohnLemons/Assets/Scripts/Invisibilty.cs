@@ -6,6 +6,7 @@ public class Invisibilty : MonoBehaviour
 {
     public bool IsInvisible = false;
     bool IsCooldown = false;
+    public GameObject textObject; 
 
     void Start()
     {
@@ -24,13 +25,25 @@ public class Invisibilty : MonoBehaviour
     {
         IsInvisible = true;
         Debug.Log("Invisibilty activated");
-        yield return new WaitForSeconds(5);
+
+        for (int i = 5; i >= 1; i--) 
+        {   
+            textObject.GetComponent<Text>().text = ("Inivisible for: " + i.ToString() + " seconds");
+            yield return new WaitForSeconds(1);
+        }
+
         IsInvisible = false;
         IsCooldown = true;
         Debug.Log("Invisibilty deactivated");
-        yield return new WaitForSeconds(10);
-        IsCooldown = false;
 
+        for (int i = 10; i >= 1; i--) 
+        {   
+            textObject.GetComponent<Text>().text = ("Cooldown: " + i.ToString() + " seconds");
+            yield return new WaitForSeconds(1);
+        }
+        IsCooldown = false;
+        
+        textObject.GetComponent<Text>().text = ("Invisibilty Available");
         Debug.Log("Cooldown over");
     }
 }
