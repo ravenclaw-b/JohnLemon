@@ -12,7 +12,7 @@ public class Invisibilty : MonoBehaviour
 
     void Start()
     {
-        Material glass = Resources.Load("Glass", typeof(Material)) as Material;
+        
     }
 
     void FixedUpdate() 
