@@ -8,11 +8,24 @@ public class Invisibilty : MonoBehaviour
 {
     public bool IsInvisible = false;
     bool IsCooldown = false;
-    public GameObject textObject; 
+    public GameObject textObject;
+    Material Glass;
+
+    public Color colorInvis;
+    
 
     void Start()
     {
-        
+
+    }
+
+    void Update() 
+    {
+        if (IsInvisible)
+        {
+            SkinnedMeshRenderer meshRenderer = GetComponent<SkinnedMeshRenderer>();
+            meshRenderer.material.color = colorInvis;
+        }
     }
 
     void FixedUpdate() 
