@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Observer : MonoBehaviour 
 {
-    public Invisibilty script;   
+    public Invisibilty InvisScript;   
 
     public Transform player;
     public GameEnding gameEnding;
@@ -13,7 +13,7 @@ public class Observer : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.transform == player && !script.IsInvisible)
+        if(other.transform == player && !InvisScript.IsInvisible)
         {
             m_IsPlayerInRange = true;
         }

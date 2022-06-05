@@ -9,23 +9,21 @@ public class Invisibilty : MonoBehaviour
     public bool IsInvisible = false;
     bool IsCooldown = false;
     public GameObject textObject;
-    Material Glass;
 
-    public Color colorInvis;
+    [SerializeField] Material Glass;
+    [SerializeField] Color colorInvis;
+    [SerializeField] Color colorVis;
     
 
     void Start()
     {
-
+        Glass.SetColor("_Color", colorVis);
+        Glass.SetFloat("_Mode", 0f);
     }
 
     void Update() 
     {
-        if (IsInvisible)
-        {
-            SkinnedMeshRenderer meshRenderer = GetComponent<SkinnedMeshRenderer>();
-            meshRenderer.material.color = colorInvis;
-        }
+
     }
 
     void FixedUpdate() 
@@ -41,6 +39,9 @@ public class Invisibilty : MonoBehaviour
         IsInvisible = true;
         Debug.Log("Invisibilty activated");
 
+        Glass.SetColor("_Color", colorInvis);
+        Glass.SetFloat("_Mode", 3f);
+
         for (int i = 5; i >= 1; i--) 
         {   
             textObject.GetComponent<Text>().text = ("Inivisible for: " + i.ToString() + " seconds");
@@ -49,6 +50,10 @@ public class Invisibilty : MonoBehaviour
 
         IsInvisible = false;
         IsCooldown = true;
+
+        Glass.SetColor("_Color", colorVis);
+        Glass.SetFloat("_Mode", 0f);
+
         Debug.Log("Invisibilty deactivated");
 
         for (int i = 10; i >= 1; i--) 
