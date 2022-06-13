@@ -269,7 +269,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Invisibilty Available!
 --- !u!222 &37874653
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -345,6 +345,11 @@ PrefabInstance:
       propertyPath: gameEnding
       value: 
       objectReference: {fileID: 1040723298}
+    - target: {fileID: 5676856719543677811, guid: 9372a8e1acb24767793b3210eb2cfb28,
+        type: 3}
+      propertyPath: InvisScript
+      value: 
+      objectReference: {fileID: 290708141}
     - target: {fileID: 5773488136013048030, guid: 9372a8e1acb24767793b3210eb2cfb28,
         type: 3}
       propertyPath: waypoints.Array.size
@@ -354,7 +359,8 @@ PrefabInstance:
         type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
-      objectReference: {fileID: 290708145}
+      objectReference: {fileID: 1366096460320519724, guid: 563d5d9aaed5e125e8458ed74fe4c9d3,
+        type: 3}
     - target: {fileID: 5773488136013048030, guid: 9372a8e1acb24767793b3210eb2cfb28,
         type: 3}
       propertyPath: waypoints.Array.data[1]
@@ -813,6 +819,11 @@ PrefabInstance:
       propertyPath: gameEnding
       value: 
       objectReference: {fileID: 1040723298}
+    - target: {fileID: 5676856719543677811, guid: 9372a8e1acb24767793b3210eb2cfb28,
+        type: 3}
+      propertyPath: InvisScript
+      value: 
+      objectReference: {fileID: 290708141}
     - target: {fileID: 5773488136013048030, guid: 9372a8e1acb24767793b3210eb2cfb28,
         type: 3}
       propertyPath: waypoints.Array.size
@@ -822,7 +833,8 @@ PrefabInstance:
         type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
-      objectReference: {fileID: 290708145}
+      objectReference: {fileID: 1366096460320519724, guid: 563d5d9aaed5e125e8458ed74fe4c9d3,
+        type: 3}
     - target: {fileID: 5773488136013048030, guid: 9372a8e1acb24767793b3210eb2cfb28,
         type: 3}
       propertyPath: waypoints.Array.data[1]
@@ -1779,6 +1791,11 @@ PrefabInstance:
       propertyPath: gameEnding
       value: 
       objectReference: {fileID: 1040723298}
+    - target: {fileID: 5676856719543677811, guid: 9372a8e1acb24767793b3210eb2cfb28,
+        type: 3}
+      propertyPath: InvisScript
+      value: 
+      objectReference: {fileID: 290708141}
     - target: {fileID: 5773488136013048030, guid: 9372a8e1acb24767793b3210eb2cfb28,
         type: 3}
       propertyPath: waypoints.Array.size
@@ -1788,7 +1805,8 @@ PrefabInstance:
         type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
-      objectReference: {fileID: 290708145}
+      objectReference: {fileID: 1366096460320519724, guid: 563d5d9aaed5e125e8458ed74fe4c9d3,
+        type: 3}
     - target: {fileID: 5773488136013048030, guid: 9372a8e1acb24767793b3210eb2cfb28,
         type: 3}
       propertyPath: waypoints.Array.data[1]
@@ -2037,6 +2055,11 @@ PrefabInstance:
       propertyPath: gameEnding
       value: 
       objectReference: {fileID: 1040723298}
+    - target: {fileID: 8411430742036781204, guid: 548ed9d25e0e2abcfa756f58b7296bc4,
+        type: 3}
+      propertyPath: InvisScript
+      value: 
+      objectReference: {fileID: 290708141}
     - target: {fileID: 8411430742036781226, guid: 548ed9d25e0e2abcfa756f58b7296bc4,
         type: 3}
       propertyPath: m_RootOrder
@@ -2395,6 +2418,11 @@ PrefabInstance:
       propertyPath: gameEnding
       value: 
       objectReference: {fileID: 1040723298}
+    - target: {fileID: 8411430742036781204, guid: 548ed9d25e0e2abcfa756f58b7296bc4,
+        type: 3}
+      propertyPath: InvisScript
+      value: 
+      objectReference: {fileID: 290708141}
     - target: {fileID: 8411430742036781226, guid: 548ed9d25e0e2abcfa756f58b7296bc4,
         type: 3}
       propertyPath: m_RootOrder
@@ -6130,11 +6158,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5676856719543677811, guid: 9372a8e1acb24767793b3210eb2cfb28,
         type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 290708145}
-    - target: {fileID: 5676856719543677811, guid: 9372a8e1acb24767793b3210eb2cfb28,
-        type: 3}
       propertyPath: script
       value: 
       objectReference: {fileID: 0}
@@ -6157,7 +6180,8 @@ PrefabInstance:
         type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
-      objectReference: {fileID: 290708145}
+      objectReference: {fileID: 1366096460320519724, guid: 563d5d9aaed5e125e8458ed74fe4c9d3,
+        type: 3}
     - target: {fileID: 5773488136013048030, guid: 9372a8e1acb24767793b3210eb2cfb28,
         type: 3}
       propertyPath: waypoints.Array.data[1]
@@ -6192,6 +6216,11 @@ PrefabInstance:
       propertyPath: gameEnding
       value: 
       objectReference: {fileID: 1040723298}
+    - target: {fileID: 8411430742036781204, guid: 548ed9d25e0e2abcfa756f58b7296bc4,
+        type: 3}
+      propertyPath: InvisScript
+      value: 
+      objectReference: {fileID: 290708141}
     - target: {fileID: 8411430742036781226, guid: 548ed9d25e0e2abcfa756f58b7296bc4,
         type: 3}
       propertyPath: m_RootOrder

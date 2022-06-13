@@ -55,7 +55,7 @@ public class Invisibilty : MonoBehaviour
         IsCooldown = true;
 
         Glass.SetColor("_Color", colorVis);
-    Glass.SetFloat("_Mode", 0f);
+        Glass.SetFloat("_Mode", 0f);
 
         Debug.Log("Invisibilty deactivated");
 
